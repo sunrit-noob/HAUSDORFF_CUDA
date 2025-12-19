@@ -1,4 +1,5 @@
 #include<cstdio>
+#include<stdint.h>
 #include<cuda.h>
 
 #define BLOCK_DIM 256

@@ -1,6 +1,8 @@
 #include<vector>
+#include<stdint.h>
 #include<torch/extension.h>
 #include<ATen/cuda/CUDAContext.h>
+#include<torch/types.h>
 
 #define CHECK_CONTIGUOUS(x) TORCH_CHECK((x).is_contiguous(), #x " must be contiguous")
 #define CHECK_TYPE(x, t) TORCH_CHECK((x).scalar_type() == (t), #x " must be " #t)
